@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css?family=Kristi|Montserrat|Raleway&display=swap');
+
+/* Reset */
+html {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom Column sizing */
+.col-12,
+.col-sm-6,
+.col-md-4,
+.col-lg-3 {
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* Font and Logo Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #003A6E;
+    padding: 10px 0;
+    letter-spacing: 1.5px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+a {
+    font-weight: 800;
+    text-decoration: underline dotted;
+    color: #0080E2;
+    transition: 0.2s ease all;
+}
+
+a:hover,
+a:focus,
+a:target {
+    color: #00467C;
+}
+
+/* General Styles */
+.bg-grey-dark {
+    background-color: #161616;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.padding-bottom-60 {
+    padding-bottom: 60px;
+}
+
+.padding-60 {
+    padding: 60px 0;
+}
+
+.padding-40 {
+    padding: 40px 0;
+}
+
+/* Header Styles */
+.header .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.header .num {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.header .logo img {
+    max-width: 250px;
+}
+
+.header-sub h1 {
+    font-size: 48px;
+    font-family: 'Kristi', sans-serif;
+    color: #0080E2;
+    border-bottom: 2px solid #0080E2;
+    width: 95%;
+    margin: 40px 2.5%;
+}
+
+
+/* Nav */
+.nav, .nav ul {
+    background-color: rgb(0, 24, 46);
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav li a {
+    color: white;
+    font-weight: 300;
+}
+
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:target {
+    color: #ff9d00;
+}
+
+.nav li.current-menu-item a {
+    color: #0080E2;
+}
+
+.nav ul#main {
+    background-color: rgb(0, 24, 46);
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+a#hamburgerBtn {
+    display: block;
+    width: 5rem;
+    height: 3rem;
+    background-color: transparent;
+    background-image: url('https://dgm3740.rconatser.com/WordPress/wp-content/themes/cruise-theme/images/open.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: .1s ease-in-out all;
+}
+
+.nav ul#main li {
+    display: none;
+}
+
+a#hamburgerBtn:hover, a#hamburgerBtn:focus, a#hamburgerBtn:target {
+    cursor: pointer;
+}
+
+.nav ul#main.open {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#hamburgerBtn.open {
+    position: absolute;
+    top: 0;
+    z-index: 6;
+    transform: rotate(90deg);
+    background-image: url("https://dgm3740.rconatser.com/WordPress/wp-content/themes/cruise-theme/images/close.png");
+}
+
+.nav ul#main.open li {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.nav ul#main.open li.menu-item-has-children {
+    padding: 15px 0 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav li.menu-item-has-children ul li:hover a, .nav li.menu-item-has-children ul li:focus a, .nav li.menu-item-has-children ul li:target  {
+    color: #ff9d00;
+}
+
+.nav li.menu-item-has-children {
+    color: #B14913;
+}
+
+.nav li.menu-item-has-children ul li {
+    font-size: 18px;
+}
+
+.nav ul#mobile.open ul li:before {
+    content: '- ';
+}
+
+.nav li.menu-item-has-children ul a li.current-menu-item {
+    border-bottom-color: #ff9d00;
+}
+
+
+/* SLICK Custom Styles (Override) */
+.imgs {
+    padding-bottom: 40px;
+}
+
+.slider {
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.imgs h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.imgs h1 span {
+    font-size: 42px;
+    font-family: 'Kristi', sans-serif;
+    color: #0080E2;
+    border-bottom: 2px solid #0080E2;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* Card Styles */
+.cards {
+    background-color: #f7f7f7;
+    padding: 60px 20px 80px
+}
+
+.cards h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards .card-container a {
+    opacity: 75%;
+    transition: 0.2s ease all;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    width: 48%;
+    margin: 10px 1%;
+    height: 350px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.cards .card-container a:hover, .cards .card-container a:target, .cards .card-container a:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.cards a#card-one {
+    background-image: url("https://dgm3740.rconatser.com/WordPress/wp-content/images/sunset-cruise.jpg");
+}
+
+.cards a#card-two {
+    background-image: url("https://dgm3740.rconatser.com/WordPress/wp-content/images/blue-scene-cruise.jpg");
+}
+
+.cards a#card-three {
+    background-image: url("https://dgm3740.rconatser.com/WordPress/wp-content/images/wine-cruise.jpg");
+}
+
+.cards a#card-four {
+    background-image: url("https://dgm3740.rconatser.com/WordPress/wp-content/images/side-boat.jpg");
+}
+
+.cards a .text {
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.cards a .text h3 {
+    color: white;
+    font-size: 20px;
+}
+
+/* CRUISES CARD STYLES */
+div.cruise-card {
+box-shadow: 0 0 3px rgba(0,0,0,.25);
+width: 90%;
+margin: 20px 5%;
+overflow: hidden;
+}
+
+div.cruise-card div.cruise-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+div.cruise-card div.cruise-title {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+div.cruise-card div.cruise-content {
+    padding: 20px;
+}
+
+div.cruise-card div.cruise-content a {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #0080E2;
+    transition: 0.2s ease all;
+}
+div.cruise-card div.cruise-content a:hover, div.cruise-card div.cruise-content a:focus, div.cruise-card div.cruise-content a:target {
+    background-color: #B14913;
+}
+/* Footer Styles */
+footer {
+    background-color: #D6EDF8;
+    /* Light teal */
+    color: black;
+}
+
+footer .container div {
+    float: left;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .social-media {
+    background-color: #000B14;
+    /* Really deep blue */
+    color: white;
+    padding: 15px;
+}
+
+footer .social-media .icon-set {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .social-media .icon-set i {
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: 0.2s ease all;
+}
+
+footer .social-media .icon-set i:hover,
+footer .social-media .icon-set i:target,
+footer .social-media .icon-set i:focus {
+    cursor: pointer;
+}
+
+footer .social-media .icon-set .fa-facebook:hover,
+footer .social-media .icon-set .fa-facebook:target,
+footer .social-media .icon-set .fa-facebook:focus {
+    color: #3B5998;
+}
+
+footer .social-media .icon-set .fa-youtube-play:hover,
+footer .social-media .icon-set .fa-youtube-play:target,
+footer .social-media .icon-set .fa-youtube-play:focus {
+    color: #ff0000;
+}
+
+footer .social-media .icon-set .fa-instagram:hover,
+footer .social-media .icon-set .fa-instagram:target,
+footer .social-media .icon-set .fa-instagram:focus {
+    color: #8134af;
+}
+
+footer .social-media .icon-set .fa-twitter:hover,
+footer .social-media .icon-set .fa-twitter:target,
+footer .social-media .icon-set .fa-twitter:focus {
+    color: #55acee;
+}
+
+footer .social-media .icon-set .fa-pinterest-p:hover,
+footer .social-media .icon-set .fa-pinterest-p:target,
+footer .social-media .icon-set .fa-pinterest-p:focus {
+    color: #BD081C;
+}
+
+/* Footer Copyright */
+.copyright {
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Footer Form*/
+footer form {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px 2.5%;
+}
+
+form input, form select {
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid #ddd;
+    transition: 0.2s ease all;
+}
+
+form input:hover,
+form input:focus,
+form input:target,
+form select:hover,
+form select:focus,
+form select:target {
+    border-color: #0080E2;
+}
+
+form input[type="submit"] {
+    background-color: #0080E2;
+    border: 2px solid #0080E2;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 15px;
+    transition: 0.2s ease all;
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:target,
+form input[type="submit"]:focus {
+    background-color: #B14913;
+    border-color: #B14913;
+    cursor: pointer;
+}
+
+#email-label {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Navigation Search Bar */
+.search form {
+    margin-top: -50px;
+    float:  right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    min-width: 200px;
+    max-width: 300px;
+}
+.search form input {
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+.search form button {
+    width: 20px;
+    padding: 2px 5px 5px 0;
+    margin-left: -45px;
+    font-size: 24px;
+    color: rgb(201, 201, 201);
+    background: none;
+    border: none;
+    transition: 0.2s ease all;
+}
+
+.search form button .fa {
+    font-size: 1.25rem;
+}
+
+.search form button:hover, .search form button:focus, .search form button:target {
+    color: #0080E2;
+    cursor: pointer;
+}
+
+/* BOOK A CRUISE FORM */
+form#book {
+    width: 90%;
+    margin: 0 5%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form#book label {
+    padding-left: 10px;
+}
+
+form#book label span {
+    color: red;
+    font-weight: bold;
+}
+
+form#book div {
+    width: 100%;
+    margin: 10px 0;
+}
+
+form#book input[type="submit"] {
+    margin-top: 20px;
+}
+
+div.agent-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.agent-img img {
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 100%;
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+}
+
+.agent-content {
+    padding: 0 20px;
+    padding-bottom: 60px;
+}
+
+.agent-content h3 {
+    margin-top: 20px;
+}
+
+.agent-content h3:first-child {
+    margin-top: 0;
+}
+/* End Mobile and Up Query */
+/* Start Tablet and Up Styles */
+@media only screen and (min-width: 768px) {
+
+    /* Custom Column sizing */
+    .col-12.col-sm-6 {
+        width: 50%;
+    }
+
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .header .logo img {
+        max-width: 175px;
+    }
+
+
+    /* CRUISE CARD STYLES */
+    div.cruise-card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    div.cruise-card div.cruise-content {
+        display: flex;
+        flex-direction: column;
+    }
+    div.cruise-card div.cruise-content a {
+        width: 50%;
+        float: right;
+    }
+    div.cruise-card div.cruise-img img {
+        width: 300px;
+        height: 100%;
+    }
+
+    /* AGENT PAGES */
+    div.agent-img {
+        float: right;
+        width: 50%;
+    }
+
+
+
+}
+
+/* End Tablet and Up Styles */
+
+/* Start Landscape Tablet and Up Styles */
+@media only screen and (min-width: 960px) {
+
+    /* Custom Column sizing */
+    .col-12.col-md-4 {
+        width: 33%;
+    }
+
+    /* Nav */ 
+    .nav ul#main {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding:  0;
+        margin:  0;
+    }
+
+    .nav ul#main li {
+        display: inline-block;
+        padding: 20px 35px;
+        color: white;
+        font-weight: 300;
+        border-bottom: 4px solid rgb(0, 24, 46);
+        border-top: 4px solid rgb(0, 24, 46);
+    }
+
+    .nav ul#main li:hover,
+    .nav ul#main li:focus,
+    .nav ul#main li:target {
+        background-color: #0080E2;
+        border-color: #0080E2;
+    }
+
+    .nav li.menu-item-has-children ul li:hover a, .nav li.menu-item-has-children ul li:target a, .nav li.menu-item-has-children ul li:focus a {
+        color: white;
+    }
+
+    .nav ul#main li.current-menu-item {
+        border-bottom-color: #0080E2;
+    }
+
+    .nav li.current-menu-item a {
+        color: white;
+    }
+
+    a#hamburgerBtn {
+        display: none;
+    }
+
+    .nav li.menu-item-has-children ul {
+        display: none;
+        position: absolute;
+        margin-top: 24px;
+        max-width: 200px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        z-index: 1;
+        text-align: center;
+    }
+    
+    .nav .menu-item-has-children:hover ul, .nav .menu-item-has-children:focus ul, .nav .menu-item-has-children:target ul, .nav .menu-item-has-children:hover ul li, .nav .menu-item-has-children:focus ul li, .nav .menu-item-has-children:target ul li {
+        display: block;
+    }
+
+    .nav li.menu-item-has-children ul li:hover, .nav li.menu-item-has-children ul li:focus, .nav li.menu-item-has-children ul li:target {
+        background-color: #ff9d00;
+        border-color: #ff9d00;
+        color: black;
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav li.menu-item-has-children {
+        border-color: #B14913;
+        background-color: #B14913;
+        color: white;
+    }
+
+    .nav li.menu-item-has-children ul {
+        background-color: #873408;
+    }
+    
+    .nav li.menu-item-has-children ul li {
+        background-color: #873408;
+        border-color: #873408;
+    }
+
+    .nav .menu-item-has-children:hover ul, .nav .menu-item-has-children:focus ul, .nav .menu-item-has-children:target ul {
+        margin-left: -35px;
+        margin-top: 22px;
+    }
+
+    /* Navigation Search Bar */
+    .search form {
+        margin-top: -60px;
+    }
+
+    /* Cards */
+    .cards .card-container a {
+        width: 31%;
+        margin: 10px 1%;
+    }
+
+    /* CRUISE CARD STYLES */
+    div.cruise-card div.cruise-content a {
+        width: 30%;
+    }
+
+    /* CRUISE SELECT FORM */
+    form#book div {
+    width: 45%;
+    margin: 10px 2.5%;
+}
+
+form#book input[type="submit"] {
+    width: auto;
+    padding: 15px 45px;
+    margin-top: 20px;
+    margin-left: 2.5%;
+}
+
+/* AGENT PAGES */
+    div.agent-img {
+        width: 40%;
+    }
+}
+/* End Landscape Tablet and Up Styles */
+
+/* Start Desktop and Up Styles */
+@media only screen and (min-width: 1200px) {
+
+    /* Custom Column sizing */
+    .col-12.col-lg-3 {
+        width: 25%;
+    }
+
+    /* Cards */
+    .cards .card-container a {
+        width: 23%;
+        margin: 10px 1%;
+    }
+
+    /* CRUISE CARD STYLES */
+    div.cruise-card div.cruise-content a {
+        width: 20%;
+    }
+}
+
+/* End Desktop and Up Styles */

@@ -1,0 +1,3 @@
+<?php
+// Required for a Blog...
+?>
