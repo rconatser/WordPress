@@ -20,6 +20,6 @@ for(let i = 0; i <= getItem.length; i++){
 
    if(desiredItem === page){
       getItem[i].parentNode.classList.toggle("current-menu-item");
-      getItem[i].parentNode.parentNode.parentNode.classList.toggle("menu-item-has-children");
+      getItem[i].parentNode.parentNode.parentNode.classList.toggle("current-menu-parent");
    }
 }

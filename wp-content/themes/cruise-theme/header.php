@@ -20,8 +20,14 @@
 <body>
 <section class="header">
     <div class="container">
-        <div class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-1x.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/logo-1x.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/logo-2x.jpg 2x, <?php echo get_template_directory_uri(); ?>/images/logo-3x.jpg 3x"  sizes="(min-width: 700) 20vw, 40vw" alt="light and dark blue cruises logo" />
+        <div class="company">
+            <div class="logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logo-1x.jpg" srcset="<?php echo get_template_directory_uri(); ?>/images/logo-1x.jpg 1x, <?php echo get_template_directory_uri(); ?>/images/logo-2x.jpg 2x, <?php echo get_template_directory_uri(); ?>/images/logo-3x.jpg 3x"  sizes="(min-width: 700) 20vw, 40vw" alt="light and dark blue cruises logo" />
+            </div>
+            <div class="name">
+                <h2>Cabot Cruises</h2>
+                <p>A Travel Agency</p>
+            </div>
         </div>
         <div class="num">
             <a href="tel:18005551234">1-800-555-1234</a>
