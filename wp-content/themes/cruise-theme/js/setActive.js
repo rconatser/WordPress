@@ -5,8 +5,8 @@ let splitItem = window.location.pathname.split("/").filter(str => str.length > 0
 console.log(splitItem);
 
 let numParts = splitItem.length;
-let desiredItem = splitItem[numParts - 1] === "phpsite" ? 'index.php' : splitItem[numParts - 1]
-// If ending is phpsite it will give desiredItem a value of index.php, all others will grab the end value
+let desiredItem = splitItem[numParts - 1] === "WordPress" ? 'index.php' : splitItem[numParts - 1]
+// If ending is WordPress (folder name) it will give desiredItem a value of index.php, all others will grab the end value
 console.log('Desired Item ==> ' + desiredItem);
 
 // gets all list items to manipulate
