@@ -64,6 +64,30 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/menuToggle.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/setActive.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@13.0.1/dist/lazyload.min.js"></script>
+<script>
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy";
+});
+</script>
+<script>
+    // CustomEvent micro-polyfill for Internet Explorer
+    (function() {
+        if (typeof window.CustomEvent === "function") {
+            return false;
+        }
+
+        function CustomEvent(event, params) {
+            params = params || { bubbles: false, cancelable: false, detail: undefined };
+            var evt = document.createEvent("CustomEvent");
+            evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+            return evt;
+        }
+
+        CustomEvent.prototype = window.Event.prototype;
+        window.CustomEvent = CustomEvent;
+    })();
+</script>
 
 <script type="application/ld+json">
     {
