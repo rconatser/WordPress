@@ -133,7 +133,14 @@ a:target {
     color: #0080E2;
     border-bottom: 2px solid #0080E2;
     width: 95%;
-    margin: 40px 2.5%;
+    margin: 0 2.5%;
+    margin-top: 40px;
+}
+
+.header-sub p.sub-title {
+    width: 95%;
+    margin: 20px 2.5%;
+    margin-bottom: 40px;
 }
 
 
@@ -303,6 +310,13 @@ a#hamburgerBtn.open:after, a#hamburgerBtn.open:after, a#hamburgerBtn.open:after 
 .slider img {
     width: 100%;
 }
+
+/* LAZY LOADING Images */
+.lazy-loader img {
+    box-shadow: 0 0 4px rgba(0,0,0,.35);
+    margin: 20px 0;
+}
+
 
 /* Card Styles */
 .cards {
