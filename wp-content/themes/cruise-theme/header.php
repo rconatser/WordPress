@@ -13,7 +13,15 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
 
-
+<!-- Recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LfA0uMUAAAAAOCAZmli7YwKI3879zwYgmVQu01x"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6LfA0uMUAAAAAOCAZmli7YwKI3879zwYgmVQu01x', {action: 'homepage'}).then(function(token) {
+        ...
+    });
+});
+</script>
 
 </head>
 

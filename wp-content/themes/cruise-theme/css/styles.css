@@ -591,7 +591,7 @@ footer form {
     margin: 10px 2.5%;
 }
 
-form input, form select {
+form input, form select, form textarea {
     padding: 10px;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
@@ -606,7 +606,10 @@ form input:focus,
 form input:target,
 form select:hover,
 form select:focus,
-form select:target {
+form select:target,
+form textarea:hover,
+form textarea:focus,
+form textarea:target {
     border-color: #0080E2;
 }
 
@@ -726,6 +729,38 @@ div.agent-img img {
 .agent-content h3:first-child {
     margin-top: 0;
 }
+
+/* Contact Us Form */
+.wpcf7-form, .wpcf7-form.invalid {
+    padding: 0;
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 80px;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    margin-left: 0;
+}
+
+.screen-reader-response { /* Should still be "on" the page for screen readers, visually hidden using position absolute */
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.wpcf7-response-output, .wpcf7-not-valid-tip {
+    color: #B14913;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
 /* End Mobile and Up Query */
 /* Start Tablet and Up Styles */
 @media only screen and (min-width: 768px) {
@@ -829,7 +864,7 @@ div.agent-img img {
 
     .nav ul#main li {
         display: inline-block;
-        padding: 20px 35px;
+        padding: 15px;
         color: white;
         font-weight: 300;
         border-bottom: 4px solid rgb(0, 24, 46);
@@ -862,7 +897,7 @@ div.agent-img img {
     .nav li.menu-item-has-children ul.sub-menu {
         display: none;
         position: absolute;
-        margin-top: 24px;
+        margin-top: 19px;
         max-width: 200px;
         box-shadow: 0 0 3px rgba(0,0,0,0.2);
         z-index: 1;
@@ -912,13 +947,13 @@ div.agent-img img {
     }
 
     .nav li.menu-item-has-children:hover ul.sub-menu, .nav .current-menu-parent:focus ul, .nav .current-menu-parent:target ul {
-        margin-left: -35px;
-        margin-top: 24px;
+        margin-left: -15px;
+        margin-top: 19px;
     }
 
     /* Navigation Search Bar */
     .search form {
-        margin-top: -60px;
+        margin-top: -55px;
     }
 
     /* Cards */
@@ -949,6 +984,36 @@ form#book input[type="submit"] {
     div.agent-img {
         width: 40%;
     }
+
+/* Contact Page */
+.wpcf7-form, .wpcf7-form.invalid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.wpcf7-form p {
+    width: 48%;
+}
+
+.wpcf7-form p:nth-child(6), .wpcf7-response-output {
+    display: block;
+    width: 98%;
+    margin: 0 1%;
+}
+
+.wpcf7-form p:nth-child(7) {
+    display: block;
+    width: 100%;
+}
+
+.wpcf7-form p:nth-child(7) input {
+    width: 200px;
+    margin-left: 1%;
+}
+
 }
 /* End Landscape Tablet and Up Styles */
 
