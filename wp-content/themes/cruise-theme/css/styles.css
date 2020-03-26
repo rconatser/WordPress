@@ -127,7 +127,7 @@ a:target {
     max-width: 250px;
 }
 
-.header-sub h1 {
+.header-sub h1, .news-post h1 {
     font-size: 48px;
     font-family: 'Kristi', sans-serif;
     color: #0080E2;
@@ -502,6 +502,120 @@ box-shadow: 0 0 4px rgba(0,0,0,.25);
     height: 100%;
 }
 
+/* NEWS Page Styles */
+
+.news-post p:first-of-type {
+    padding: 40px 20px;
+    padding-bottom: 10px;
+}
+
+.news-post p {
+    padding: 10px 20px;
+}
+
+.news-post img {
+    display: block;
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+    margin: 15px 1%;
+    width: 98%;
+    height: auto;
+}
+
+.news-content {
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0,0,0,.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 40px;
+    width: 95%;
+    margin: 20px 2.5%;
+}
+
+.news-content .date-post {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.news-content .date-post h2 {
+    font-weight: 800;
+    color: #0080E2;
+    padding-right: 10px;
+}
+
+.news-content .post-content-text {
+    width: 100%;
+}
+
+.news-content .news-title a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #0080E2;
+    font-weight: lighter;
+    border-bottom: 2px solid #0080E2;
+    font-size: 24px;
+    transition: 0.2s ease all;
+}
+
+.news-content .news-more-link {
+    font-family: 'Kristi', sans-serif;
+    color: #0080E2;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    transition: 0.2s ease all;
+} 
+
+.prev.page-numbers, .page-numbers {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #0080E2;
+    font-weight: lighter;
+    padding: 10px 5px;
+    transition: 0.2s ease all;
+}
+
+.news_pagination {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 2.5%;
+}
+
+.news_pagination a, .news_pagination .prev.page-numbers, .news_pagination .next-page-numbers {
+    background-color: #0080E2;
+    padding: 15px;
+    line-height: 1;
+    border-radius: 30px;
+    color: white;
+}
+
+.page-numbers.current {
+    color: white;
+    padding: 15px;
+    line-height: 1;
+    border-radius: 30px;
+    background-color: rgb(0, 24, 46);
+}
+
+.page-numbers:hover, .page-numbers:focus, .news_pagination .prev.page-numbers:hover, .news_pagination .prev.page-numbers:focus {
+    background-color: rgb(0, 24, 46);
+}
+
+.news-title a:hover, .news-title a:focus, .news-more-link:hover, .news-more-link:focus {
+    color: #e67a00;
+    border-color: #e67a00;
+}
+
+
 /* Footer Styles */
 footer {
     background-color: #D6EDF8;
@@ -840,6 +954,32 @@ div.agent-img img {
     .map {
         height: 350px;
     }
+
+    /* NEWS Page Styles */
+.news-post img {
+    width: 45%;
+    margin: 40px 20px;
+    float: right;
+}
+
+.news-content {
+    flex-direction: row;
+}
+
+.news-content .date-post {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news-content .date-post h2 {
+    padding: 0;
+}
+
+.news-content .post-content-text {
+    width: 85%;
+}
 
 }
 
