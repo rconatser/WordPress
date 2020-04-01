@@ -321,12 +321,14 @@ a#hamburgerBtn.open:after, a#hamburgerBtn.open:after, a#hamburgerBtn.open:after 
     height: auto;
 }
 
-.imgs h1 {
+.imgs h2 {
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: none;
     text-align: center;
     font-size: 32px;
 }
 
-.imgs h1 span {
+.imgs h2 span {
     font-size: 42px;
     font-family: 'Kristi', sans-serif;
     color: #0080E2;
